@@ -108,7 +108,7 @@ Requirements:
 - Reconcile with latest origin/$BASE_REF before merge or deploy. Remote divergence in $RUN_DIR/remote-state.md is not a human-approval blocker by itself; attempt a normal fetch/rebase/merge workflow and stop blocked only if conflicts or permissions prevent safe reconciliation.
 - Deploy only from latest verified main. Never deploy from a dirty or detached worktree.
 - Push and merge only the one verified focused fix. Do not force-push shared branches.
-- Build final static assets from latest main, sync dist/ to $PI_HOST:$PI_DEPLOY_PATH when running remotely, or directly to $PI_DEPLOY_PATH when this job is already running on host $PI_HOST. Verify $LIVE_URL through the live site, close the selected GitHub issue with evidence, and clean up temporary branches/worktrees created by this run.
+- Build final static assets from latest main, sync dist/ to $PI_HOST:$PI_DEPLOY_PATH when running remotely, or directly to $PI_DEPLOY_PATH when this job is already running on host $PI_HOST. Ensure deployed static files are readable by nginx, for example with rsync chmod flags or `chmod -R u=rwX,g=rX,o=rX $PI_DEPLOY_PATH`. Verify $LIVE_URL through the live site, close the selected GitHub issue with evidence, and clean up temporary branches/worktrees created by this run.
 - If GitHub write access, Pi SSH, nginx/Cloudflare, unreconcilable remote divergence, dirty branch state, failing checks, or live verification blocks safe rollout, stop "blocked" and include exact next steps.
 - Stop "deployed" only after merge, deploy, live verification, issue closure, and cleanup are complete.
 
