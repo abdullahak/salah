@@ -8,6 +8,10 @@
     "build": "tsc -b && vite build",
     "lint": "oxlint",
     "test": "vitest run",
+    "test:e2e": "npm run build && playwright test",
+    "test:mobile": "npm run build && playwright test e2e/mobile.spec.ts --project=mobile-chrome --project=mobile-webkit",
+    "test:mobile:webkit": "npm run build && playwright test e2e/mobile.spec.ts --project=mobile-webkit",
+    "test:pwa": "npm run build && playwright test e2e/pwa.spec.ts --project=pwa-chromium",
     "test:run": "vitest run",
     "test:watch": "vitest",
     "preview": "vite preview"
@@ -20,6 +24,7 @@
   "devDependencies": {
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
+    "@playwright/test": "^1.61.1",
     "@types/node": "^24.13.2",
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",

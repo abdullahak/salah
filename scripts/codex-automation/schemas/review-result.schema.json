@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://salah.abdlh.com/schemas/codex-automation/review-result.schema.json",
+  "title": "Salah Review Result",
+  "x-result-kind": "review-final",
+  "type": "object",
+  "required": ["stop_state", "summary", "evidence", "checks", "issues", "blockers"],
+  "properties": {
+    "stop_state": {
+      "type": "string",
+      "enum": ["clean-no-op", "findings-recorded", "blocked"]
+    },
+    "summary": { "type": "string" },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": ["object", "string"]
+      }
+    },
+    "checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "status"],
+        "properties": {
+          "name": { "type": "string" },
+          "status": {
+            "type": "string",
+            "enum": ["passed", "failed", "skipped", "blocked"]
+          },
+          "log": { "type": "string" }
+        },
+        "additionalProperties": true
+      }
+    },
+    "issues": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["action"],
+        "properties": {
+          "action": {
+            "type": "string",
+            "enum": ["deduped", "created", "updated", "none"]
+          },
+          "url": { "type": "string" },
+          "priority": {
+            "type": "string",
+            "enum": ["priority-high", "priority-medium", "priority-low"]
+          },
+          "evidence": { "type": "string" }
+        },
+        "additionalProperties": true
+      }
+    },
+    "blockers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["area", "detail", "next_step"],
+        "properties": {
+          "area": { "type": "string" },
+          "detail": { "type": "string" },
+          "next_step": { "type": "string" }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

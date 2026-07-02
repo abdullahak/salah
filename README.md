@@ -34,3 +34,7 @@ npm run preview -- --host 0.0.0.0
 The production app is a static PWA. `npm run build` writes deployable assets to `dist/`. The intended production path is nginx static hosting on the Raspberry Pi with `salah.abdlh.com` pointing to it through the existing Cloudflare/Pi setup.
 
 No backend, account system, analytics, or automatic external location lookup is required for v1.
+
+## Automation
+
+The Salah improvement cron defaults to `CODEX_AUTOMATION_AUTONOMY=deploy`: after one focused fix passes lint, tests, build, mobile browser checks, PWA checks, GitHub write checks, deploy-target checks, and live-site reachability, it should push, merge, deploy to `pi:/var/www/salah` or the local `/var/www/salah` path when already running on `pi`, verify `https://salah.abdlh.com`, close the issue, and clean up without human confirmation. It stops blocked only when a concrete gate cannot be satisfied automatically.

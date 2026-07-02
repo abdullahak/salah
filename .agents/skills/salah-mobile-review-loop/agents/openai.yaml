@@ -1,0 +1,4 @@
+interface:
+  display_name: "Salah Mobile Review Loop"
+  short_description: "Review Salah as a mobile-first PWA"
+  default_prompt: "Use $salah-mobile-review-loop to run the daily mobile PWA review."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Salah Improvement Deploy Loop"
+  short_description: "Fix one Salah issue and deploy safely"
+  default_prompt: "Use $salah-improvement-deploy-loop to fix one safe Salah review issue and deploy it."
