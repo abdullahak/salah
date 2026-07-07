@@ -18,6 +18,13 @@
 		0A0001092C2F000100000001 /* PrayerParityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0002092C2F000100000001 /* PrayerParityTests.swift */; };
 		0A00010A2C2F000100000001 /* prayer-parity.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A00020A2C2F000100000001 /* prayer-parity.json */; };
 		0A00010B2C2F000100000001 /* Adhan in Frameworks */ = {isa = PBXBuildFile; productRef = 0A0009012C2F000100000001 /* Adhan */; };
+		0A0011012C2F000100000001 /* SalahActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0012012C2F000100000001 /* SalahActivityAttributes.swift */; };
+		0A0011022C2F000100000001 /* LiveActivityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0012022C2F000100000001 /* LiveActivityController.swift */; };
+		0A0011032C2F000100000001 /* SalahActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0012012C2F000100000001 /* SalahActivityAttributes.swift */; };
+		0A0011042C2F000100000001 /* SalahWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0012032C2F000100000001 /* SalahWidgetBundle.swift */; };
+		0A0011052C2F000100000001 /* SalahLiveActivityWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0012042C2F000100000001 /* SalahLiveActivityWidget.swift */; };
+		0A0011062C2F000100000001 /* SalahPrayerIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0012052C2F000100000001 /* SalahPrayerIntents.swift */; };
+		0A0011072C2F000100000001 /* SalahWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0A00120B2C2F000100000001 /* SalahWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +35,28 @@
 			remoteGlobalIDString = 0A0007012C2F000100000001;
 			remoteInfo = Salah;
 		};
+		0A0013012C2F000100000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A0006012C2F000100000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A0017012C2F000100000001;
+			remoteInfo = SalahWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0A0018012C2F000100000001 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0A0011072C2F000100000001 /* SalahWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0A0002012C2F000100000001 /* SalahApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalahApp.swift; sourceTree = "<group>"; };
@@ -43,6 +71,13 @@
 		0A00020A2C2F000100000001 /* prayer-parity.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ../shared/fixtures/prayer-parity.json; sourceTree = "<group>"; };
 		0A00020B2C2F000100000001 /* Salah.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Salah.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A00020C2C2F000100000001 /* SalahTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SalahTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A0012012C2F000100000001 /* SalahActivityAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalahActivityAttributes.swift; sourceTree = "<group>"; };
+		0A0012022C2F000100000001 /* LiveActivityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivityController.swift; sourceTree = "<group>"; };
+		0A0012032C2F000100000001 /* SalahWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalahWidgetBundle.swift; sourceTree = "<group>"; };
+		0A0012042C2F000100000001 /* SalahLiveActivityWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalahLiveActivityWidget.swift; sourceTree = "<group>"; };
+		0A0012052C2F000100000001 /* SalahPrayerIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalahPrayerIntents.swift; sourceTree = "<group>"; };
+		0A0012062C2F000100000001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A00120B2C2F000100000001 /* SalahWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SalahWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +96,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0A0014012C2F000100000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -68,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				0A0005022C2F000100000001 /* Salah */,
+				0A0015022C2F000100000001 /* SalahWidgetExtension */,
 				0A0005032C2F000100000001 /* SalahTests */,
 				0A0005042C2F000100000001 /* Shared Fixtures */,
 				0A0005052C2F000100000001 /* Products */,
@@ -80,6 +123,7 @@
 				0A0005062C2F000100000001 /* App */,
 				0A0005072C2F000100000001 /* Models */,
 				0A0005082C2F000100000001 /* Services */,
+				0A0015012C2F000100000001 /* LiveActivities */,
 				0A0005092C2F000100000001 /* Views */,
 			);
 			path = Salah;
@@ -106,6 +150,7 @@
 			children = (
 				0A00020B2C2F000100000001 /* Salah.app */,
 				0A00020C2C2F000100000001 /* SalahTests.xctest */,
+				0A00120B2C2F000100000001 /* SalahWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -150,6 +195,27 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		0A0015012C2F000100000001 /* LiveActivities */ = {
+			isa = PBXGroup;
+			children = (
+				0A0012012C2F000100000001 /* SalahActivityAttributes.swift */,
+				0A0012022C2F000100000001 /* LiveActivityController.swift */,
+			);
+			name = LiveActivities;
+			path = LiveActivities;
+			sourceTree = "<group>";
+		};
+		0A0015022C2F000100000001 /* SalahWidgetExtension */ = {
+			isa = PBXGroup;
+			children = (
+				0A0012032C2F000100000001 /* SalahWidgetBundle.swift */,
+				0A0012042C2F000100000001 /* SalahLiveActivityWidget.swift */,
+				0A0012052C2F000100000001 /* SalahPrayerIntents.swift */,
+				0A0012062C2F000100000001 /* Info.plist */,
+			);
+			path = SalahWidgetExtension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -160,10 +226,12 @@
 				0A0008012C2F000100000001 /* Sources */,
 				0A0004012C2F000100000001 /* Frameworks */,
 				0A0008022C2F000100000001 /* Resources */,
+				0A0018012C2F000100000001 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0A0013022C2F000100000001 /* PBXTargetDependency */,
 			);
 			name = Salah;
 			packageProductDependencies = (
@@ -191,6 +259,23 @@
 			productReference = 0A00020C2C2F000100000001 /* SalahTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		0A0017012C2F000100000001 /* SalahWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A001A012C2F000100000001 /* Build configuration list for PBXNativeTarget "SalahWidgetExtension" */;
+			buildPhases = (
+				0A0018032C2F000100000001 /* Sources */,
+				0A0014012C2F000100000001 /* Frameworks */,
+				0A0018042C2F000100000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SalahWidgetExtension;
+			productName = SalahWidgetExtension;
+			productReference = 0A00120B2C2F000100000001 /* SalahWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -207,6 +292,9 @@
 					0A0007022C2F000100000001 = {
 						CreatedOnToolsVersion = 15.4;
 						TestTargetID = 0A0007012C2F000100000001;
+					};
+					0A0017012C2F000100000001 = {
+						CreatedOnToolsVersion = 15.4;
 					};
 				};
 			};
@@ -228,6 +316,7 @@
 			targets = (
 				0A0007012C2F000100000001 /* Salah */,
 				0A0007022C2F000100000001 /* SalahTests */,
+				0A0017012C2F000100000001 /* SalahWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -248,6 +337,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0A0018042C2F000100000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -259,6 +355,8 @@
 				0A0001022C2F000100000001 /* SalahModels.swift in Sources */,
 				0A0001032C2F000100000001 /* PrayerCalculator.swift in Sources */,
 				0A0001042C2F000100000001 /* SettingsStore.swift in Sources */,
+				0A0011012C2F000100000001 /* SalahActivityAttributes.swift in Sources */,
+				0A0011022C2F000100000001 /* LiveActivityController.swift in Sources */,
 				0A0001052C2F000100000001 /* RootView.swift in Sources */,
 				0A0001062C2F000100000001 /* PrayerTimesView.swift in Sources */,
 				0A0001072C2F000100000001 /* QiblahView.swift in Sources */,
@@ -274,6 +372,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0A0018032C2F000100000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A0011032C2F000100000001 /* SalahActivityAttributes.swift in Sources */,
+				0A0011042C2F000100000001 /* SalahWidgetBundle.swift in Sources */,
+				0A0011052C2F000100000001 /* SalahLiveActivityWidget.swift in Sources */,
+				0A0011062C2F000100000001 /* SalahPrayerIntents.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -281,6 +390,11 @@
 			isa = PBXTargetDependency;
 			target = 0A0007012C2F000100000001 /* Salah */;
 			targetProxy = 0A0003012C2F000100000001 /* PBXContainerItemProxy */;
+		};
+		0A0013022C2F000100000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A0017012C2F000100000001 /* SalahWidgetExtension */;
+			targetProxy = 0A0013012C2F000100000001 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -412,6 +526,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Salah;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -444,6 +559,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Salah;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -515,6 +631,64 @@
 			};
 			name = Release;
 		};
+		0A001B012C2F000100000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SalahWidgetExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abdlh.salah.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		0A001B022C2F000100000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SalahWidgetExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abdlh.salah.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -541,6 +715,15 @@
 			buildConfigurations = (
 				0A000B012C2F000100000001 /* Debug */,
 				0A000B022C2F000100000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A001A012C2F000100000001 /* Build configuration list for PBXNativeTarget "SalahWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A001B012C2F000100000001 /* Debug */,
+				0A001B022C2F000100000001 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
