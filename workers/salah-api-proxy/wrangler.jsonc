@@ -1,0 +1,12 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "salah-api-proxy",
+  "main": "worker.mjs",
+  "compatibility_date": "2026-07-07",
+  "routes": [
+    {
+      "pattern": "api.salah.abdlh.com",
+      "custom_domain": true
+    }
+  ]
+}
