@@ -18,6 +18,7 @@ struct PrayedPrayerIntent: LiveActivityIntent {
     }
 
     func perform() async throws -> some IntentResult {
+        await SalahWidgetAPIClient.markPrayed(activityId: activityId)
         await SalahActivityIntentActions.end(
             activityId: activityId,
             completionState: .prayed,
@@ -43,6 +44,7 @@ struct SnoozePrayerIntent: LiveActivityIntent {
     }
 
     func perform() async throws -> some IntentResult {
+        await SalahWidgetAPIClient.snooze(activityId: activityId)
         await SalahActivityIntentActions.snooze(activityId: activityId)
         return .result()
     }
@@ -64,6 +66,7 @@ struct IgnorePrayerIntent: LiveActivityIntent {
     }
 
     func perform() async throws -> some IntentResult {
+        await SalahWidgetAPIClient.ignore(activityId: activityId)
         await SalahActivityIntentActions.end(
             activityId: activityId,
             completionState: .ignored,

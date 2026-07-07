@@ -25,6 +25,9 @@
 		0A0011052C2F000100000001 /* SalahLiveActivityWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0012042C2F000100000001 /* SalahLiveActivityWidget.swift */; };
 		0A0011062C2F000100000001 /* SalahPrayerIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0012052C2F000100000001 /* SalahPrayerIntents.swift */; };
 		0A0011072C2F000100000001 /* SalahWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0A00120B2C2F000100000001 /* SalahWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0A0021012C2F000100000001 /* SalahAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0022012C2F000100000001 /* SalahAPIClient.swift */; };
+		0A0021022C2F000100000001 /* SalahRemoteSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0022022C2F000100000001 /* SalahRemoteSync.swift */; };
+		0A0021032C2F000100000001 /* SalahWidgetAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0022032C2F000100000001 /* SalahWidgetAPIClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +81,9 @@
 		0A0012052C2F000100000001 /* SalahPrayerIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalahPrayerIntents.swift; sourceTree = "<group>"; };
 		0A0012062C2F000100000001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A00120B2C2F000100000001 /* SalahWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SalahWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A0022012C2F000100000001 /* SalahAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalahAPIClient.swift; sourceTree = "<group>"; };
+		0A0022022C2F000100000001 /* SalahRemoteSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalahRemoteSync.swift; sourceTree = "<group>"; };
+		0A0022032C2F000100000001 /* SalahWidgetAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalahWidgetAPIClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +184,8 @@
 			children = (
 				0A0002032C2F000100000001 /* PrayerCalculator.swift */,
 				0A0002042C2F000100000001 /* SettingsStore.swift */,
+				0A0022012C2F000100000001 /* SalahAPIClient.swift */,
+				0A0022022C2F000100000001 /* SalahRemoteSync.swift */,
 			);
 			name = Services;
 			path = Services;
@@ -211,6 +219,7 @@
 				0A0012032C2F000100000001 /* SalahWidgetBundle.swift */,
 				0A0012042C2F000100000001 /* SalahLiveActivityWidget.swift */,
 				0A0012052C2F000100000001 /* SalahPrayerIntents.swift */,
+				0A0022032C2F000100000001 /* SalahWidgetAPIClient.swift */,
 				0A0012062C2F000100000001 /* Info.plist */,
 			);
 			path = SalahWidgetExtension;
@@ -355,6 +364,8 @@
 				0A0001022C2F000100000001 /* SalahModels.swift in Sources */,
 				0A0001032C2F000100000001 /* PrayerCalculator.swift in Sources */,
 				0A0001042C2F000100000001 /* SettingsStore.swift in Sources */,
+				0A0021012C2F000100000001 /* SalahAPIClient.swift in Sources */,
+				0A0021022C2F000100000001 /* SalahRemoteSync.swift in Sources */,
 				0A0011012C2F000100000001 /* SalahActivityAttributes.swift in Sources */,
 				0A0011022C2F000100000001 /* LiveActivityController.swift in Sources */,
 				0A0001052C2F000100000001 /* RootView.swift in Sources */,
@@ -380,6 +391,7 @@
 				0A0011042C2F000100000001 /* SalahWidgetBundle.swift in Sources */,
 				0A0011052C2F000100000001 /* SalahLiveActivityWidget.swift in Sources */,
 				0A0011062C2F000100000001 /* SalahPrayerIntents.swift in Sources */,
+				0A0021032C2F000100000001 /* SalahWidgetAPIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

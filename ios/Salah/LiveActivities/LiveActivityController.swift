@@ -71,6 +71,8 @@ final class LiveActivityController: ObservableObject {
     @Published private(set) var activeActivityId: String?
     @Published private(set) var statusMessage = "No Live Activity is running."
 
+    private let apiClient = SalahAPIClient.shared
+
     var hasActiveActivity: Bool {
         activeActivityId != nil
     }
@@ -95,11 +97,12 @@ final class LiveActivityController: ObservableObject {
             let activity = try Activity.request(
                 attributes: attributes,
                 content: ActivityContent(state: window.contentState, staleDate: window.endTime),
-                pushType: nil
+                pushType: .token
             )
 
             activeActivityId = activity.id
             statusMessage = "\(window.prayerLabel) Live Activity started."
+            observePushTokenUpdates(for: activity)
         } catch {
             statusMessage = "Live Activity could not start: \(error.localizedDescription)"
         }
@@ -150,5 +153,13 @@ final class LiveActivityController: ObservableObject {
         }
 
         activeActivityId = nil
+    }
+
+    private func observePushTokenUpdates(for activity: Activity<SalahActivityAttributes>) {
+        Task {
+            for await token in activity.pushTokenUpdates {
+                try? await apiClient.updateActivityToken(updateToken: token.hexEncodedString)
+            }
+        }
     }
 }
