@@ -12,7 +12,11 @@ const HOP_BY_HOP_HEADERS = [
 ];
 
 export default {
-  async fetch(request) {
+  async fetch(request, env) {
+    if (!env.ORIGIN_TOKEN) {
+      return new Response("Origin token is not configured.", { status: 500 });
+    }
+
     const incomingUrl = new URL(request.url);
     const targetUrl = new URL(incomingUrl.pathname + incomingUrl.search, ORIGIN);
     const headers = new Headers(request.headers);
@@ -23,6 +27,7 @@ export default {
 
     headers.set("x-forwarded-host", incomingUrl.host);
     headers.set("x-salah-api-proxy", "cloudflare-worker");
+    headers.set("x-salah-origin-token", env.ORIGIN_TOKEN);
 
     return fetch(targetUrl, {
       method: request.method,

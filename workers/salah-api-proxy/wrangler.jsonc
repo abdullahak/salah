@@ -3,6 +3,11 @@
   "name": "salah-api-proxy",
   "main": "worker.mjs",
   "compatibility_date": "2026-07-07",
+  "secrets": {
+    "required": [
+      "ORIGIN_TOKEN"
+    ]
+  },
   "routes": [
     {
       "pattern": "api.salah.abdlh.com",
