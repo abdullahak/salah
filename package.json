@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "api:apns:check": "npm run api:build && node dist-api/apnsSmoke.js",
     "api:build": "tsc -p tsconfig.api.json",
     "api:start": "node dist-api/index.js",
     "build": "tsc -b && vite build",
