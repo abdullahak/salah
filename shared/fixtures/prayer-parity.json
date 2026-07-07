@@ -1,0 +1,241 @@
+{
+  "generatedBy": "adhan-js 4.4.4 through src/calculation/prayerTimes.ts behavior",
+  "generatedAt": "2026-07-04T13:23:26.696Z",
+  "fixtures": [
+    {
+      "id": "makkah-umm-al-qura-shafi-12h",
+      "label": "Makkah, Saudi Arabia",
+      "latitude": 21.3891,
+      "longitude": 39.8579,
+      "timezone": "Asia/Riyadh",
+      "date": "2026-06-30",
+      "settings": {
+        "calculationMethod": "UmmAlQura",
+        "madhab": "shafi",
+        "timeFormat": "12h",
+        "snoozeDurationMinutes": 10
+      },
+      "expectedQiblahBearing": 318.545144,
+      "expectedPrayers": [
+        {
+          "name": "fajr",
+          "iso": "2026-06-30T01:14:00.000Z",
+          "formatted": "4:14 AM"
+        },
+        {
+          "name": "sunrise",
+          "iso": "2026-06-30T02:42:00.000Z",
+          "formatted": "5:42 AM"
+        },
+        {
+          "name": "dhuhr",
+          "iso": "2026-06-30T09:24:00.000Z",
+          "formatted": "12:24 PM"
+        },
+        {
+          "name": "asr",
+          "iso": "2026-06-30T12:43:00.000Z",
+          "formatted": "3:43 PM"
+        },
+        {
+          "name": "maghrib",
+          "iso": "2026-06-30T16:07:00.000Z",
+          "formatted": "7:07 PM"
+        },
+        {
+          "name": "isha",
+          "iso": "2026-06-30T17:37:00.000Z",
+          "formatted": "8:37 PM"
+        }
+      ]
+    },
+    {
+      "id": "london-mwl-shafi-24h",
+      "label": "London, United Kingdom",
+      "latitude": 51.5072,
+      "longitude": -0.1276,
+      "timezone": "Europe/London",
+      "date": "2026-06-30",
+      "settings": {
+        "calculationMethod": "MuslimWorldLeague",
+        "madhab": "shafi",
+        "timeFormat": "24h",
+        "snoozeDurationMinutes": 10
+      },
+      "expectedQiblahBearing": 118.987253,
+      "expectedPrayers": [
+        {
+          "name": "fajr",
+          "iso": "2026-06-30T00:04:00.000Z",
+          "formatted": "01:04"
+        },
+        {
+          "name": "sunrise",
+          "iso": "2026-06-30T03:47:00.000Z",
+          "formatted": "04:47"
+        },
+        {
+          "name": "dhuhr",
+          "iso": "2026-06-30T12:05:00.000Z",
+          "formatted": "13:05"
+        },
+        {
+          "name": "asr",
+          "iso": "2026-06-30T16:26:00.000Z",
+          "formatted": "17:26"
+        },
+        {
+          "name": "maghrib",
+          "iso": "2026-06-30T20:21:00.000Z",
+          "formatted": "21:21"
+        },
+        {
+          "name": "isha",
+          "iso": "2026-07-01T00:04:00.000Z",
+          "formatted": "01:04"
+        }
+      ]
+    },
+    {
+      "id": "new-york-north-america-shafi-12h",
+      "label": "New York, United States",
+      "latitude": 40.7128,
+      "longitude": -74.006,
+      "timezone": "America/New_York",
+      "date": "2026-06-30",
+      "settings": {
+        "calculationMethod": "NorthAmerica",
+        "madhab": "shafi",
+        "timeFormat": "12h",
+        "snoozeDurationMinutes": 10
+      },
+      "expectedQiblahBearing": 58.481697,
+      "expectedPrayers": [
+        {
+          "name": "fajr",
+          "iso": "2026-06-30T07:49:00.000Z",
+          "formatted": "3:49 AM"
+        },
+        {
+          "name": "sunrise",
+          "iso": "2026-06-30T09:28:00.000Z",
+          "formatted": "5:28 AM"
+        },
+        {
+          "name": "dhuhr",
+          "iso": "2026-06-30T17:01:00.000Z",
+          "formatted": "1:01 PM"
+        },
+        {
+          "name": "asr",
+          "iso": "2026-06-30T21:00:00.000Z",
+          "formatted": "5:00 PM"
+        },
+        {
+          "name": "maghrib",
+          "iso": "2026-07-01T00:31:00.000Z",
+          "formatted": "8:31 PM"
+        },
+        {
+          "name": "isha",
+          "iso": "2026-07-01T02:10:00.000Z",
+          "formatted": "10:10 PM"
+        }
+      ]
+    },
+    {
+      "id": "new-york-north-america-hanafi-24h",
+      "label": "New York, United States",
+      "latitude": 40.7128,
+      "longitude": -74.006,
+      "timezone": "America/New_York",
+      "date": "2026-06-30",
+      "settings": {
+        "calculationMethod": "NorthAmerica",
+        "madhab": "hanafi",
+        "timeFormat": "24h",
+        "snoozeDurationMinutes": 10
+      },
+      "expectedQiblahBearing": 58.481697,
+      "expectedPrayers": [
+        {
+          "name": "fajr",
+          "iso": "2026-06-30T07:49:00.000Z",
+          "formatted": "03:49"
+        },
+        {
+          "name": "sunrise",
+          "iso": "2026-06-30T09:28:00.000Z",
+          "formatted": "05:28"
+        },
+        {
+          "name": "dhuhr",
+          "iso": "2026-06-30T17:01:00.000Z",
+          "formatted": "13:01"
+        },
+        {
+          "name": "asr",
+          "iso": "2026-06-30T22:13:00.000Z",
+          "formatted": "18:13"
+        },
+        {
+          "name": "maghrib",
+          "iso": "2026-07-01T00:31:00.000Z",
+          "formatted": "20:31"
+        },
+        {
+          "name": "isha",
+          "iso": "2026-07-01T02:10:00.000Z",
+          "formatted": "22:10"
+        }
+      ]
+    },
+    {
+      "id": "manual-islamabad-karachi-hanafi-24h",
+      "label": "33.6844, 73.0479",
+      "latitude": 33.6844,
+      "longitude": 73.0479,
+      "timezone": "Asia/Karachi",
+      "date": "2026-06-30",
+      "settings": {
+        "calculationMethod": "Karachi",
+        "madhab": "hanafi",
+        "timeFormat": "24h",
+        "snoozeDurationMinutes": 15
+      },
+      "expectedQiblahBearing": 255.912256,
+      "expectedPrayers": [
+        {
+          "name": "fajr",
+          "iso": "2026-06-29T22:17:00.000Z",
+          "formatted": "03:17"
+        },
+        {
+          "name": "sunrise",
+          "iso": "2026-06-30T00:01:00.000Z",
+          "formatted": "05:01"
+        },
+        {
+          "name": "dhuhr",
+          "iso": "2026-06-30T07:12:00.000Z",
+          "formatted": "12:12"
+        },
+        {
+          "name": "asr",
+          "iso": "2026-06-30T12:12:00.000Z",
+          "formatted": "17:12"
+        },
+        {
+          "name": "maghrib",
+          "iso": "2026-06-30T14:22:00.000Z",
+          "formatted": "19:22"
+        },
+        {
+          "name": "isha",
+          "iso": "2026-06-30T16:06:00.000Z",
+          "formatted": "21:06"
+        }
+      ]
+    }
+  ]
+}
